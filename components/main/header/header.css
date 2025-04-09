@@ -1,0 +1,71 @@
+/* Estilos generales del header */
+.header {
+    width: 100%;
+    background-color: var(--background-color, #fff);
+    color: var(--text-color, #333);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Contenedores dentro del header */
+.left_container, .center_container, .right_container {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Contenedor derecho */
+.right_container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaciado entre iconos */
+}
+
+/* Estilos generales para los switches (idioma y tema) */
+.toggle-lang, .toggle-theme {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* Ocultar los inputs checkbox */
+.toggle-lang input, .toggle-theme input {
+    display: none;
+}
+
+/* Estilos para el icono del interruptor de idioma */
+.toggle-lang i {
+    color: #007bff;
+}
+
+.toggle-lang input:checked + i {
+    color: #ff6600;
+}
+
+/* Estilos para el icono del interruptor de tema */
+.toggle-theme i {
+    color: #555;
+}
+
+.toggle-theme input:checked + i {
+    color: #f1c40f;
+}
