@@ -1,0 +1,15 @@
+Icons and Buttons #1c71d8
+
+Titles #000
+
+Hover Button #3c89e6
+
+About Me Text #65a2eb
+
+Background #b6d3f6
+
+Section Backgroud #fff
+
+Card Backgroud #e9f1fc
+
+Card Hover Backgroud #8ebaf0
