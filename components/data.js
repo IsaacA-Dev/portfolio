@@ -17,7 +17,7 @@ export var data = {
       },
       {
         project_name: "FixMasters",
-        description: "Sistema de gestión de reparaciones.",
+        description: "Sistema de gestion de tareas.",
         responsibilities: "Diseño de base de datos y lógica de negocio.",
       },
       {
@@ -49,7 +49,7 @@ export var data = {
       },
       {
         project_name: "FixMasters",
-        description: "Repair management system.",
+        description: "Task tracking system.",
         responsibilities: "Database design and business logic.",
       },
       {
