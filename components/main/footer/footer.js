@@ -1,3 +1,3 @@
 export const init = () => {
-    console.log('Footer loaded...')
+    console.log("Footer loaded...");
 }

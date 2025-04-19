@@ -1,8 +1,11 @@
 html, body {
-    min-height: 100%;
+    height: 100%;
+    width: 100%;    
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-light); /* Aplica el fondo oscuro estilo laboratorio */
+    color: var(--text-color); /* Asegura que el texto sea legible */
 }
 
 body {
@@ -14,8 +17,53 @@ body {
     padding: 0;
 }
 
-:root {
-    --header-height: 60px;
-    --footer-height: 60px;
-    --content-height: calc(100vh - var(--header-height) - var(--footer-height));
+header {
+    position: fixed;
+    background-color: transparent;
+    color: var(--text-color); /* Texto claro */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'MegaManFont', sans-serif; /* Fuente personalizada */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
 }
+
+footer {
+    background-color: var(--primary-color); /* Azul armadura */
+    color: var(--text-color); /* Texto claro */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+:root {
+    /* Paleta Mega Man X */
+    --primary-color: #2f65bd; /* Azul armadura */
+    --secondary-color: #d6e0f7; /* Fondo claro estilo futurista */
+    --hover-color: #4c8efc; /* Azul brillante al pasar el cursor */
+    --text-color: #ffffff; /* Texto claro */
+    --font-color-secondary: #cbd4f2; /* Texto gris azulado claro */
+
+    --border-navbar: #4A2F40;
+
+    --border-radius: 10px;
+    --card-padding: 20px;
+    --card-margin: 20px;
+    --font-size-title: 20px;
+    --font-size-description: 16px;
+
+    --background-light: #1e1e2e; /* Fondo oscuro estilo laboratorio */
+    --background-highlight: rgba(76, 142, 252, 0.1); /* Azul translúcido */
+    --background-hover: rgba(76, 142, 252, 0.2); /* Azul más fuerte */
+}
+
+@font-face {
+    font-family: 'MegaManFont';
+    src: url('../assets/fonts/mega-man-x.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+

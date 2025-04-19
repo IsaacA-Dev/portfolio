@@ -1,6 +1,29 @@
 export var data = {
   es: {
-    evolution: { },
+    evolution: {
+      timeline: [
+        {
+          year: "2020",
+          title: "Graduación",
+          description: "Completé mi licenciatura en Ciencias de la Computación.",
+        },
+        {
+          year: "2021",
+          title: "Primer Proyecto Profesional",
+          description: "Desarrollé mi primer proyecto profesional como desarrollador fullstack.",
+        },
+        {
+          year: "2022",
+          title: "Certificación en Desarrollo Web",
+          description: "Obtuve una certificación en desarrollo web avanzado.",
+        },
+        {
+          year: "2023",
+          title: "Lanzamiento de AlumNet",
+          description: "Lancé AlumNet, una plataforma para la gestión de estudiantes.",
+        },
+      ],
+    },
     about_me: {
       name: "Isaac Abdiel González Gutiérrez",
       description: `¡Hola! Mi nombre es Isaac Abdiel González Gutiérrez, un desarrollador con experiencia en diversas áreas, pero lo que realmente me apasiona es el modelado de aplicaciones, el análisis de requerimientos y el diseño de arquitectura de software. Disfruto estructurar tanto el backend como el frontend, asegurando que cada sistema sea escalable, eficiente y bien organizado.
@@ -17,7 +40,7 @@ export var data = {
       },
       {
         project_name: "FixMasters",
-        description: "Sistema de gestion de tareas.",
+        description: "Sistema de gestión de tareas.",
         responsibilities: "Diseño de base de datos y lógica de negocio.",
       },
       {
@@ -29,10 +52,34 @@ export var data = {
         project_name: "AlumNet",
         description: "Plataforma para gestión de estudiantes.",
         responsibilities: "Análisis de requerimientos y diseño del sistema.",
-      }
+      },
     ],
   },
   en: {
+    evolution: {
+      timeline: [
+        {
+          year: "2020",
+          title: "Graduation",
+          description: "Completed my bachelor's degree in Computer Science.",
+        },
+        {
+          year: "2021",
+          title: "First Professional Project",
+          description: "Developed my first professional project as a fullstack developer.",
+        },
+        {
+          year: "2022",
+          title: "Web Development Certification",
+          description: "Obtained a certification in advanced web development.",
+        },
+        {
+          year: "2023",
+          title: "Launch of AlumNet",
+          description: "Launched AlumNet, a platform for student management.",
+        },
+      ],
+    },
     about_me: {
       name: "Isaac Abdiel González Gutiérrez",
       description: `Hello! My name is Isaac Abdiel González Gutiérrez, a developer with experience in various areas, but what truly excites me is application modeling, requirements analysis, and software architecture design. I enjoy structuring both the backend and frontend, ensuring that each system is scalable, efficient, and well-organized.
@@ -61,7 +108,7 @@ export var data = {
         project_name: "AlumNet",
         description: "Student management platform.",
         responsibilities: "Requirements analysis and system design.",
-      }
+      },
     ],
   },
 };

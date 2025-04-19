@@ -2,8 +2,8 @@ export var settings = {
     load: {
         main: [
             {
-                parent: 'Header',
-                url: 'components/main/header',
+                parent: 'Navbar',
+                url: 'components/main/navbar',
             },
             {
                 parent: 'Content',
@@ -12,7 +12,7 @@ export var settings = {
             {
                 parent: 'Footer',
                 url: 'components/main/footer',
-            }
+            },
         ],
         
     }
