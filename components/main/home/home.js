@@ -3,7 +3,7 @@ import { data, currentLanguage, skills } from "../../data.js";
 export const init = () => {
   console.log("Home loaded...");
   drawWelcomeSection();
-  drawTimeline()
+  // drawTimeline()
   drawProjectCards();
   drawSkillsContainer();
   drawAboutMe();
