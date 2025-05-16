@@ -196,58 +196,67 @@
 
 /* Sección "Projects" */
 .projects {
-  background-color: var(--background-light); /* Fondo claro */
-  border-radius: var(--border-radius); /* Bordes redondeados */
-  padding: var(--card-padding); /* Espaciado interno */
-  margin: var(--card-margin); /* Espaciado externo */
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: var(--card-padding);
+  margin: var(--card-margin);
 }
 
 .projects_title {
-  font-size: var(--font-size-title); /* Tamaño de fuente del título */
-  font-weight: bold; /* Texto en negrita */
-  margin-bottom: var(--card-margin); /* Espaciado inferior */
-  color: var(--font-color-secondary); /* Color secundario */
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  margin-bottom: var(--card-margin);
+  color: var(--font-color-secondary);
 }
 
 .projects_container {
-  display: flex; /* Diseño flexible */
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
-  justify-content: space-between; /* Espaciado uniforme entre elementos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Tarjetas de proyectos */
 .project_card {
-  background-color: var(--secondary-color); /* Fondo secundario */
-  border-radius: var(--border-radius); /* Bordes redondeados */
-  padding: var(--card-padding); /* Espaciado interno */
-  margin: var(--card-margin); /* Espaciado externo */
-  width: 30%; /* Ocupa el 30% del ancho del contenedor */
-  cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-  transition: background-color 0.3s ease; /* Transición suave al cambiar el fondo */
-}
-
-.project_card h2 {
-  font-size: var(--font-size-title); /* Tamaño de fuente del título */
-  font-weight: bold; /* Texto en negrita */
-  margin-bottom: 10px; /* Espaciado inferior */
-  color: var(--primary-color); /* Color principal */
-}
-
-.project_card p {
-  font-size: var(--font-size-description); /* Tamaño de fuente del texto */
-  color: var(--font-color-secondary); /* Color secundario */
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: var(--card-padding);
+  margin: var(--card-margin);
+  width: 30%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .project_card:hover {
-  background-color: var(--hover-color); /* Cambia el fondo al pasar el cursor */
+  background-color: var(--background-hover);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Sección "Skills" */
+.project_card h2 {
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.project_card p {
+  font-size: var(--font-size-description);
+  color: var(--text-color); /* Texto blanco para contraste */
+}
+
+
 .skills {
-  display: flex; /* Diseño flexible */
-  flex-direction: column; /* Elementos en columna */
-  background-color: var(--background-light); /* Fondo claro */
-  border-radius: var(--border-radius); /* Bordes redondeados */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: 2rem; /* Añade espacio interno */
+}
+
+.skills_title h1 {
+  margin: 0; /* Elimina márgenes que pueden sobresalir */
+  padding: 0.5rem 0; /* Puedes ajustar este padding si quieres espacio */
 }
 
 .skills_title {
@@ -294,8 +303,8 @@
 }
 
 .skill_card img {
-  width: 40px; /* Ancho fijo */
-  height: 40px; /* Alto fijo */
+  width: 70px; /* Ancho fijo */
+  height: 70px; /* Alto fijo */
   object-fit: contain; /* Ajusta la imagen sin distorsión */
   margin-bottom: 0.8rem; /* Espaciado inferior */
 }
@@ -308,11 +317,11 @@
 }
 
 .skill_card h2 {
-  font-size: 0.95rem; /* Tamaño de fuente */
+  font-size: 1rem; /* Tamaño de fuente */
   text-align: center; /* Centra el texto */
   font-weight: bold; /* Texto en negrita */
   margin-bottom: 0.2rem; /* Espaciado inferior */
-  color: var(--primary-color); /* Color principal */
+  color: var(--text-color); /* Color principal */
 }
 
 .skill_card small {

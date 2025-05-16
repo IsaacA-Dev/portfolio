@@ -35,23 +35,18 @@ export var data = {
     projects: [
       {
         project_name: "By Your Orders",
-        description: "Plataforma de gestión de pedidos en línea.",
-        responsibilities: "Desarrollo backend y arquitectura.",
+        description: "Plataforma tipo ERP para una empresa de embalajes de cajas de madera.",
+        responsibilities: "Desarrollo Backend Nodejs, Frontend Angular 16 y Diseño de base de datos.",
       },
       {
         project_name: "FixMasters",
         description: "Sistema de gestión de tareas.",
-        responsibilities: "Diseño de base de datos y lógica de negocio.",
+        responsibilities: "Diseño de base de datos, dearrollo Backend nodejs y Frontend React Native.",
       },
       {
         project_name: "SysCribs",
-        description: "Aplicación de administración de propiedades.",
-        responsibilities: "Desarrollo de frontend y API REST.",
-      },
-      {
-        project_name: "AlumNet",
-        description: "Plataforma para gestión de estudiantes.",
-        responsibilities: "Análisis de requerimientos y diseño del sistema.",
+        description: "Sistema de moniterio de cunas inteligentes con aplicación IoT.",
+        responsibilities: "Desarrollo Backend ASP.Net webapi, Frontend vanilla js y diseño de base de datos.",
       },
     ],
   },
@@ -91,23 +86,18 @@ export var data = {
     projects: [
       {
         project_name: "By Your Orders",
-        description: "Online order management platform.",
-        responsibilities: "Backend development and architecture.",
+        description: "ERP platform for a wooden box packaging company.",
+        responsibilities: "Backend development with Node.js, Frontend with Angular 16, and database design.",
       },
       {
         project_name: "FixMasters",
-        description: "Task tracking system.",
-        responsibilities: "Database design and business logic.",
+        description: "Task management system.",
+        responsibilities: "Database design, backend development with Node.js, and frontend with React Native.",
       },
       {
         project_name: "SysCribs",
-        description: "Property management application.",
-        responsibilities: "Frontend development and REST API.",
-      },
-      {
-        project_name: "AlumNet",
-        description: "Student management platform.",
-        responsibilities: "Requirements analysis and system design.",
+        description: "Smart crib monitoring system with IoT application.",
+        responsibilities: "Backend development with ASP.Net Web API, frontend with vanilla JavaScript, and database design.",
       },
     ],
   },

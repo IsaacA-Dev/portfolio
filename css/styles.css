@@ -38,25 +38,26 @@ footer {
 }
 
 :root {
-    /* Paleta Mega Man X */
-    --primary-color: #2f65bd; /* Azul armadura */
-    --secondary-color: #d6e0f7; /* Fondo claro estilo futurista */
-    --hover-color: #4c8efc; /* Azul brillante al pasar el cursor */
-    --text-color: #ffffff; /* Texto claro */
-    --font-color-secondary: #cbd4f2; /* Texto gris azulado claro */
-
+    /* Paleta Mega Man X optimizada */
+    --primary-color: #2f65bd;             /* Azul armadura */
+    --secondary-color: #2a2e45;           /* Azul oscuro grisáceo futurista */
+    --hover-color: #3b5fcc;               /* Azul más brillante al pasar el cursor */
+    --text-color: #ffffff;                /* Texto claro */
+    --font-color-secondary: #aab8e8;      /* Texto azul claro con contraste */
+  
     --border-navbar: #4A2F40;
-
+  
     --border-radius: 10px;
     --card-padding: 20px;
     --card-margin: 20px;
     --font-size-title: 20px;
     --font-size-description: 16px;
-
-    --background-light: #1e1e2e; /* Fondo oscuro estilo laboratorio */
-    --background-highlight: rgba(76, 142, 252, 0.1); /* Azul translúcido */
-    --background-hover: rgba(76, 142, 252, 0.2); /* Azul más fuerte */
-}
+  
+    --background-light: #1e1e2e;          /* Fondo oscuro estilo laboratorio */
+    --background-highlight: rgba(76, 142, 252, 0.1);  /* Azul translúcido */
+    --background-hover: rgba(76, 142, 252, 0.2);      /* Azul más fuerte translúcido */
+  }
+  
 
 @font-face {
     font-family: 'MegaManFont';
