@@ -1,200 +1,128 @@
-/* Contenedor principal */
+/* ========================= */
+/* Contenedor principal      */
+/* ========================= */
 .content {
-  padding: 0; /* Elimina cualquier padding interno */
-  margin: 0; /* Elimina cualquier margen externo */
-  background-color: var(--background-light); /* Fondo del contenedor principal */
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-light);
 }
 
-/* Sección "Welcome" */
+/* ========================= */
+/* Sección "Welcome"         */
+/* ========================= */
 .welcome {
-  display: flex; /* Diseño flexible */
-  flex-direction: column; /* Elementos en columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente */
-  width: 100vw; /* Ocupa todo el ancho de la pantalla */
-  height: 100vh; /* Ocupa todo el alto de la pantalla */
-  color: var(--text-color); /* Color del texto */
-  background-image: url('https://bghq.com/bgs/snes/m/mmx/002.png'); /* Imagen de fondo */
-  background-size: cover; /* La imagen cubre todo el contenedor */
-  background-position: center center; /* Centra la imagen horizontal y verticalmente */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  overflow: hidden; /* Evita desbordamientos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: var(--text-color);
+  background-image: url('https://bghq.com/bgs/snes/m/mmx/002.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-/* Cuadro de diálogo en la sección "Welcome" */
+/* Cuadro de diálogo */
 .megaman-dialogue-box {
-  position: absolute; /* Cambia a posición absoluta */
-  top: 10%; /* Mueve el cuadro hacia arriba (10% desde la parte superior) */
-  right: 10%; /* Mueve el cuadro hacia la derecha (10% desde el borde derecho) */
-  width: 90%; /* Ocupa el 90% del ancho del contenedor */
-  max-width: 500px; /* Ancho máximo del cuadro */
-  background-color: #000000; /* Fondo negro */
-  border: 3px solid #ff9800; /* Borde naranja */
-  padding: 18px 20px; /* Espaciado interno */
-  margin: 0; /* Elimina márgenes */
-  box-shadow: 0 0 15px #ff9800aa; /* Sombra naranja */
-  border-radius: 6px; /* Bordes redondeados */
-  text-transform: uppercase; /* Texto en mayúsculas */
-  letter-spacing: 1px; /* Espaciado entre letras */
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 90%;
+  max-width: 500px;
+  background-color: #000000;
+  border: 3px solid #ff9800;
+  padding: 18px 20px;
+  margin: 0;
+  box-shadow: 0 0 15px #ff9800aa;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Texto dentro del cuadro de diálogo */
 .megaman-dialogue-text {
-  color: #ffcc80; /* Color naranja claro del texto */
-  font-family: 'MegaManFont', monospace; /* Fuente personalizada */
-  font-size: 14px; /* Tamaño de fuente */
-  line-height: 1.7; /* Altura de línea */
+  color: #ffcc80;
+  font-family: 'MegaManFont', monospace;
+  font-size: 14px;
+  line-height: 1.7;
   text-shadow: 
-    1px 1px 0 #000, /* Sombra negra */
-    2px 2px 0 #000, /* Sombra negra más intensa */
-    -1px -1px 0 #b35900; /* Sombra naranja oscuro */
+    1px 1px 0 #000,
+    2px 2px 0 #000,
+    -1px -1px 0 #b35900;
 }
 
 .megaman-dialogue-image img {
-  max-width: 20%; /* Reduce el ancho máximo al 50% del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: contain; /* Ajusta la imagen sin distorsión */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  display: block; /* Asegura que se comporte como un bloque */
-  padding-left: 400px; /* Espaciado izquierdo */
+  max-width: 20%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  padding-left: 400px;
+  transition: all 0.3s ease;
 }
 
-/* Imagen en la sección "Welcome" */
 .welcome_image img {
-  max-width: 90%; /* Reduce el ancho máximo de la imagen */
-  max-height: 60%; /* Reduce el alto máximo de la imagen */
-  object-fit: contain; /* Ajusta la imagen sin distorsión */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  display: block; /* Asegura que se comporte como un bloque */
-  padding-top: 100px; /* Espaciado superior */
+  max-width: 90%;
+  max-height: 60%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  padding-top: 100px;
+  transition: all 0.3s ease;
 }
 
-/* Contenedor general de la línea del tiempo */
-.timeline {
-  position: relative;
-  max-width: 1200px; /* Ancho máximo de la línea del tiempo */
-  margin: 50px auto; /* Centra la línea del tiempo */
-  padding: 20px 0;
-}
-
-/* Línea central de la línea del tiempo */
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%; /* Centra la línea */
-  width: 4px; /* Grosor de la línea */
-  height: 100%; /* Altura completa */
-  background-color: var(--primary-color); /* Color de la línea */
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.timeline_title {
-  font-size: 18px; /* Tamaño de fuente del título */
-  font-weight: bold; /* Texto en negrita */
-  color: var(--text-color); /* Color del texto */
-  text-align: left; /* Centra el texto */
-  margin-bottom: 20px; /* Espaciado inferior */
-}
-
-/* Contenedor de eventos */
-.timeline_events {
-  position: relative;
-}
-
-/* Estilo general para los eventos */
-.timeline_event {
-  position: relative;
-  margin-bottom: 40px; /* Espaciado entre eventos */
-  width: 45%; /* Ancho de los eventos */
-  z-index: 2;
-  margin-top: -6px;
-}
-
-.timeline_event:hover {
-  background-color: var(--background-highlight); /* Cambia el fondo al pasar el cursor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-  transition: background-color 0.3s ease; /* Transición suave al cambiar el fondo */
-}
-
-/* Eventos en el lado izquierdo */
-.timeline_event_left {
-  left: 0;
-  text-align: right; /* Alinea el texto a la derecha */
-}
-
-/* Eventos en el lado derecho */
-.timeline_event_right {
-  left: 55%; /* Desplaza los eventos a la derecha */
-  text-align: left; /* Alinea el texto a la izquierda */
-}
-
-/* Conector de cada evento */
-.timeline_event::before {
-  content: "";
-  position: absolute;
-  top: 20px; /* Ajusta la posición vertical del conector */
-  right: -20px; /* Conecta al centro de la línea */
-  width: 20px; /* Longitud del conector */
-  height: 4px; /* Grosor del conector */
-  background-color: var(--primary-color); /* Color del conector */
-  z-index: 1;
-}
-
-.timeline_event_right::before {
-  left: -20px; /* Conecta al centro de la línea */
-  right: auto;
-}
-
-/* Contenido del evento */
-.timeline_content {
-  background-color: var(--background-highlight);
-  padding: 20px 30px;
-  border-radius: var(--border-radius);
-  font-size: 15px;
-  color: var(--text-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.timeline_content h3 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-.timeline_content p {
-  margin: 5px 0 0;
-  font-size: 14px;
-  color: var(--font-color-secondary);
-}
-
-/* Fecha del evento */
-.timeline_date {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  font-weight: bold;
-  color: var(--primary-color);
+/* ========================= */
+/* Sección "About Me"        */
+/* ========================= */
+.about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--secondary-color);
-  padding: 5px 10px;
   border-radius: var(--border-radius);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.timeline_event_left .timeline_date {
-  right: -66px; /* Posiciona la fecha a la izquierda del evento */
-  top: 7px;
+.about_me_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.timeline_event_right .timeline_date {
-  left: -66px; /* Posiciona la fecha a la derecha del evento */
-  top: 7px;
+.about_me_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Sección "Projects" */
+.about_me_title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about_me_description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: justify;
+  margin: 0;
+}
+
+/* ========================= */
+/* Sección "Projects"        */
+/* ========================= */
 .projects {
   background-color: var(--background-light);
   border-radius: var(--border-radius);
@@ -215,7 +143,6 @@
   justify-content: space-between;
 }
 
-/* Tarjetas de proyectos */
 .project_card {
   background-color: var(--secondary-color);
   border-radius: var(--border-radius);
@@ -242,219 +169,290 @@
 
 .project_card p {
   font-size: var(--font-size-description);
-  color: var(--text-color); /* Texto blanco para contraste */
+  color: var(--text-color);
 }
 
-
+/* ========================= */
+/* Sección "Skills"          */
+/* ========================= */
 .skills {
   display: flex;
   flex-direction: column;
   background-color: var(--background-light);
   border-radius: var(--border-radius);
-  padding: 2rem; /* Añade espacio interno */
+  padding: 2rem;
 }
 
 .skills_title h1 {
-  margin: 0; /* Elimina márgenes que pueden sobresalir */
-  padding: 0.5rem 0; /* Puedes ajustar este padding si quieres espacio */
+  margin: 0;
+  padding: 0.5rem 0;
 }
 
 .skills_title {
-  font-size: var(--font-size-title); /* Tamaño de fuente del título */
-  font-weight: bold; /* Texto en negrita */
-  color: var(--text-color); /* Color del texto */
-  text-align: center; /* Centra el texto */
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: center;
 }
 
 .skills_content {
-  display: flex; /* Diseño flexible */
-  flex-direction: column; /* Elementos en columna */
+  display: flex;
+  flex-direction: column;
 }
 
 .technical_skills, 
 .soft_skills {
-  background: var(--background-highlight); /* Fondo destacado */
-  border-radius: 12px; /* Bordes redondeados */
-  padding: 1.5rem; /* Espaciado interno */
+  background: var(--background-highlight);
+  border-radius: 12px;
+  padding: 1.5rem;
 }
 
 .skills_grid {
-  display: grid; /* Diseño en cuadrícula */
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Columnas adaptables */
-  gap: 1.2rem; /* Espaciado entre elementos */
-  margin-top: 1rem; /* Espaciado superior */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
 }
 
-/* Tarjetas de habilidades */
 .skill_card {
-  display: flex; /* Diseño flexible */
-  flex-direction: column; /* Elementos en columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  padding: 1rem; /* Espaciado interno */
-  border-radius: 8px; /* Bordes redondeados */
-  background: var(--background-highlight); /* Fondo destacado */
-  transition: all 0.3s ease; /* Transición suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--background-highlight);
+  transition: all 0.3s ease;
 }
 
 .skill_card:hover {
-  transform: translateY(-3px); /* Eleva la tarjeta al pasar el cursor */
-  background: var(--background-hover); /* Cambia el fondo al pasar el cursor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transform: translateY(-3px);
+  background: var(--background-hover);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill_card img {
-  width: 70px; /* Ancho fijo */
-  height: 70px; /* Alto fijo */
-  object-fit: contain; /* Ajusta la imagen sin distorsión */
-  margin-bottom: 0.8rem; /* Espaciado inferior */
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
 }
 
 .skill_card span {
-  font-size: 0.85rem; /* Tamaño de fuente */
-  text-align: center; /* Centra el texto */
-  font-weight: bold; /* Texto en negrita */
-  color: var(--primary-color); /* Color principal */
+  font-size: 0.85rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .skill_card h2 {
-  font-size: 1rem; /* Tamaño de fuente */
-  text-align: center; /* Centra el texto */
-  font-weight: bold; /* Texto en negrita */
-  margin-bottom: 0.2rem; /* Espaciado inferior */
-  color: var(--text-color); /* Color principal */
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.skill_card small {
-  display: block; /* Se comporta como un bloque */
-  font-size: 0.7rem; /* Tamaño de fuente */
-  color: #aaa; /* Color gris claro */
-  margin-top: 0.2rem; /* Espaciado superior */
-  font-style: italic; /* Texto en cursiva */
+/* ========================= */
+/* Sección "Timeline"        */
+/* ========================= */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px 0;
 }
 
-/* Sección "About Me" */
-.about_me {
-  border-radius: var(--border-radius); /* Bordes redondeados */
-  padding: var(--card-padding); /* Espaciado interno */
-  margin: var(--card-margin); /* Espaciado externo */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
-.about_me_image {
-  width: 100px; /* Ancho fijo */
-  height: 100px; /* Alto fijo */
-  background-color: var(--background-light); /* Fondo claro */
-  border-radius: 50%; /* Forma circular */
-  margin: var(--card-margin); /* Espaciado externo */
+.timeline_title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-.about_me_image img {
-  width: 100%; /* Imagen ocupa todo el contenedor */
-  height: 100%; /* Imagen ocupa todo el contenedor */
-  border-radius: 50%; /* Forma circular */
+.timeline_events {
+  position: relative;
 }
 
-.about_me_title {
-  font-size: var(--font-size-title); /* Tamaño de fuente del título */
-  font-weight: bold; /* Texto en negrita */
-  color: var(--text-color); /* Color del texto */
+.timeline_event {
+  position: relative;
+  margin-bottom: 40px;
+  width: 45%;
+  z-index: 2;
+  margin-top: -6px;
 }
 
-.about_me_description {
-  font-size: var(--font-size-title); /* Tamaño de fuente */
-  text-align: justify; /* Texto justificado */
-  color: var(--primary-color); /* Color principal */
+.timeline_event:hover {
+  background-color: var(--background-highlight);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  /* Estilos para pantallas pequeñas */
-  .welcome {
-    flex-direction: column; /* Cambia a diseño en columna */
-    align-items: center; /* Centra los elementos */
-    justify-content: center; /* Centra los elementos */
-    padding: 10px; /* Reduce el espaciado interno */
-  }
+.timeline_event_left {
+  left: 0;
+  text-align: right;
+}
 
-  .megaman-dialogue-box {
-    width: 90%; /* Reduce el ancho */
-    padding: 10px; /* Reduce el espaciado interno */
-    margin: 20px auto; /* Reduce el espaciado externo */
-  }
-  .megaman-dialogue-text {
-    font-size: 12px; /* Reduce el tamaño de fuente */
-    line-height: 1.5; /* Reduce el interlineado */
-  }
+.timeline_event_right {
+  left: 55%;
+  text-align: left;
+}
 
+.timeline_event::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 20px;
+  height: 4px;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+.timeline_event_right::before {
+  left: -20px;
+  right: auto;
+}
+
+.timeline_content {
+  background-color: var(--background-highlight);
+  padding: 20px 30px;
+  border-radius: var(--border-radius);
+  font-size: 15px;
+  color: var(--text-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.timeline_content h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.timeline_content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: var(--font-color-secondary);
+}
+
+.timeline_date {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.timeline_event_left .timeline_date {
+  right: -66px;
+  top: 7px;
+}
+
+.timeline_event_right .timeline_date {
+  left: -66px;
+  top: 7px;
+}
+
+/* ========================= */
+/* Estilos responsivos       */
+/* ========================= */
+@media (max-width: 1024px) {
+  /* Ajustes para tablets */
   .welcome_image img {
-    max-width: 80%; /* Reduce el ancho máximo de la imagen */
-    max-height: 40%; /* Reduce el alto máximo de la imagen */
+    max-width: 70%;
+    max-height: 50%;
+    padding-top: 50px;
   }
 
-  .about_me, .projects {
-    margin: 10px; /* Reduce el espaciado externo */
-    padding: 15px; /* Reduce el espaciado interno */
+  .megaman-dialogue-image img {
+    max-width: 15%;
+    padding-left: 200px;
   }
 
-  .about_me_image {
-    width: 80px; /* Reduce el ancho */
-    height: 80px; /* Reduce el alto */
-    margin: 10px auto; /* Centra la imagen */
+  .timeline_event {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .about_me_title,
-  .projects_title,
-  .about_me_description {
-    font-size: 16px; /* Reduce el tamaño de fuente */
-    text-align: justify; /* Texto justificado */
+  .timeline_event::before {
+    display: none;
   }
 
   .projects_container {
-    flex-direction: column; /* Cambia a diseño en columna */
-    align-items: center; /* Centra los elementos */
+    flex-direction: column;
+    align-items: center;
   }
 
   .project_card {
-    width: 90%; /* Ocupa casi todo el ancho */
-    margin: 10px 0; /* Espaciado vertical */
-  }
-
-  .skills_title {
-    font-size: 18px; /* Reduce el tamaño de fuente */
-    margin-bottom: 1rem; /* Espaciado inferior */
-  }
-
-  .skills_content {
-    padding: 0 10px; /* Reduce el espaciado interno */
-  }
-
-  .technical_skills, 
-  .soft_skills {
-    padding: 1rem; /* Reduce el espaciado interno */
+    width: 80%;
+    margin: 15px 0;
   }
 
   .skills_grid {
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Reduce el tamaño mínimo de las columnas */
-    gap: 1rem; /* Reduce el espaciado entre elementos */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para pantallas pequeñas */
+  .welcome_image img {
+    max-width: 60%;
+    max-height: 40%;
+    padding-top: 30px;
   }
 
-  .skill_card {
-    padding: 0.8rem; /* Reduce el espaciado interno */
+  .megaman-dialogue-image img {
+    max-width: 12%;
+    padding-left: 100px;
   }
 
-  .skill_card img {
-    width: 30px; /* Reduce el ancho */
-    height: 30px; /* Reduce el alto */
+  .about_me_image {
+    width: 120px;
+    height: 120px;
   }
 
-  .skill_card span {
-    font-size: 0.75rem; /* Reduce el tamaño de fuente */
+  .skills_grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para pantallas extra pequeñas */
+  .welcome_image img {
+    max-width: 50%;
+    max-height: 30%;
+    padding-top: 20px;
   }
 
-  .skill_card h2 {
-    font-size: 0.85rem; /* Reduce el tamaño de fuente */
+  .megaman-dialogue-image img {
+    max-width: 10%;
+    padding-left: 50px;
   }
 
-  .skill_card small {
-    font-size: 0.65rem; /* Reduce el tamaño de fuente */
+  .about_me_image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skills_grid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
   }
 }
